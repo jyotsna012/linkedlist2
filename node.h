@@ -1,19 +1,15 @@
-/*
- *File for node class. Contains a pointer to a student and a node. Contains functions 
- *to access student and node
- *Max Shi
- */
+#pragma once
+#include "Student.h"
 
-#include "student.h"
-class Node
-{
-  public:
-    Node(Student* s);
-    ~Node();
-    Node* getNext();
-    Student* getStudent();
-    void setNext(Node* n);
-  private:
-    Student* student; //pointer to student
-    Node* next; //pointer to next node
+class Node{
+
+ public:
+  Node(Student* newS);
+  Node* getNext();
+  Student* getStudent();
+  void setNext(Node* nNext);
+  ~Node();
+ private:
+  Student* student;
+  Node* next;
 };
