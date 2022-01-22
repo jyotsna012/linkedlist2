@@ -1,5 +1,5 @@
 #include "node.h"
-#include "student.h"
+#include "Student.h"
 #include <iostream>
 
 using namespace std;
